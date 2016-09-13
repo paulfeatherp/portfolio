@@ -1,10 +1,14 @@
 /* Post view single Page */
 
 body {
-  font-family: 'Quattrocento', serif;
+	font-family: 'Quattrocento', serif;
 	font-size: 15px;
 	font-weight: 400;
 	color: #222222;
+}
+
+a:hover {
+	border-bottom: 2px solid transparent;
 }
 
 /* Posts ALL */
@@ -45,8 +49,8 @@ body {
 }
 
 .posts .post-blog a:hover{
-  text-decoration: none;
-  background: #c1eee6;
+	text-decoration: none;
+	background: #c1eee6;
 	border-bottom: 2px solid #c1eee6;
 }
 
@@ -54,6 +58,9 @@ body {
 
 /* HEADER */
 
+.navbar {
+	/*background-color: #ccc;*/
+}
 .navbar-custom {
 	height: 60px;
 }
@@ -68,10 +75,26 @@ ul li::before {
 	height: 50px;
 }
 
-.navbar-custom li:first-child,
-.navbar-custom li:first-child a {
-	padding-left: 0;
-} 
+@media (min-width: 767px){
+	.navbar-custom li:first-child,
+	.navbar-custom li:first-child a {
+		padding-left: 0;
+	} 
+}
+
+@media (max-width: 767px){
+	.navbar-custom li,
+	.navbar-custom li a {
+		padding-left: 0;
+	} 
+	.navbar-custom li a{
+		text-align: center;
+	} 
+
+	.navbar-collapse {
+		background-color: #fff;
+	}
+}
 
 .navbar-custom li a {
 	height: 50px;
@@ -82,6 +105,7 @@ ul li::before {
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-weight: 400;
 	color: #666666;
+	/*background-color: #ccc;*/
 }
 
 .navbar-custom .menu li a.active {
@@ -93,7 +117,7 @@ ul li::before {
 .navbar-custom li a:hover {
 	border-bottom: 0px;
 }
- 
+
 /* END HEADER */
 
 /* SINGLE POST VIEW */
@@ -117,20 +141,127 @@ ul li::before {
 	margin-top: 10px; 
 }
 
-/*.post .post-content {
+/* Questionnaire */
+
+.question {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 700;
+	color: #666666;
+
+}
+
+.answer{
 	font-family: 'Quattrocento', serif;
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 400;
-	color: #222222;
-}*/
+	color: ##666666;
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 2px 10px 2px 10px;
+}
+
+.wrapper-btn {
+	text-align: center;
+}
+.btn-send {
+	width: 200px;
+	height: 50px;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.newsletter {
+	width: 500px;
+	/*height: 280px;*/
+	/*background-color: red;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+}
+
+.newsletter .title {
+	padding-left: 25px;
+}
+
+/* CONTACT - data */
+
+.contact-row {
+	/*background-color: #ccc;*/
+	margin-top: 20px; 
+}
+
+.contact-row:first-child {
+	margin-top: 80px; 
+
+}
+
+.contact-row span {
+	/*display: inline-block;*/
+}
+
+@media (max-width: 767px){
+	.col1 {
+		width: 100px;
+		/*background-color: red;*/
+		display: inline-block;
+	}
+
+}
+
+/* POSTS MOBILE */
+
+@media (max-width: 1000px){
+	.post-blog { 
+		width: 33%; 
+	}
+}
+
+@media (max-width: 800px){
+	.post-blog { 
+		width: 50%; 
+	}
+}
+
+@media (max-width: 530px){
+	.post-blog { 
+		width: 100%; 
+	}
+}
+
+@media (max-width: 600px){
+	.newsletter { 
+		width: 250px; 
+	}
+}
 
 
+/*  Post single page - mobile */
+@media (max-width: 991px){
+	.description, .meta { 
+		width: 100%;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.description {
+		margin-bottom: 50px;
+	}
+	.title {
+		width: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 
-
-
-
-
-
+.post-content {
+	margin-bottom: 100px;
+}
 
 
 

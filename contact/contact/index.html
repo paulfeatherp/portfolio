@@ -25,13 +25,23 @@
   <header>
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav menu">
             <li><a href="/portfolio/pages/blog" class="active">Blog</a></li>
             <li><a href="/portfolio/pages/case-study">Case studies</a></li>
             <li><a href="/portfolio/pages/resource">Resouces</a></li>
             <li><a href="/portfolio/pages/contact">Contact</a></li>
-            <li><a href="/portfolio/pages/form-one">Form One</a></li>
+            <!-- <li><a href="/portfolio/pages/form-one">Form One</a></li> -->
           </ul>
         </div>
       </div>
@@ -39,25 +49,15 @@
   </header>
 
   <div class="container content-transition">
-    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <div class="row post">
-      <div class="col-xs-6 col-sm-3">
+      <div class="col-xs-6 col-sm-3 description">
         <a href="/portfolio/contact/contact" class="title"><span class="number"> </span>My Contact</a>
-        <!-- <h1><a href="#">My Contact</a></h1> -->
         <div class="meta">
-          
           <span class="date">August 20th, 2016</span>
           <span class="word-count">5 words</span>
           <span class="reading-time">1 min read</span>
-
-          <!-- <time>August 20th, 2016</time>
-          &middot;
-          <span>5 words</span>
-          &middot;
-          <time>1 min read</time> -->
         </div>
       </div>
-
       <div class="col-xs-12 col-md-9">
         <div class="post-content">
           <h1 id="this-is-a-contact-post">this is a contact post</h1>
@@ -66,11 +66,6 @@
       </div>
     </div>
   </div>
-
-
-  <!-- <footer>
-    <p><a href="example.com">Paul Feather</a> &copy; 2016</p>
-  </footer> -->
 
 </body>
 </html>
