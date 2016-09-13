@@ -25,56 +25,115 @@
   <header>
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav menu">
             <li><a href="/portfolio/pages/blog">Blog</a></li>
             <li><a href="/portfolio/pages/case-study">Case studies</a></li>
             <li><a href="/portfolio/pages/resource">Resouces</a></li>
             <li><a href="/portfolio/pages/contact">Contact</a></li>
-            <li><a href="/portfolio/pages/form-one" class="active">Form One</a></li>
+            <!-- <li><a href="/portfolio/pages/form-one" class="active">Form One</a></li> -->
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  
-
   <div class="container">
     <div class="row posts">
-     
-
+      
+      <div class="col-md-6">
         <p>
-          <span class="date">Q:</span>
-          <a>Are you sure this is a question?</a>
+          <span class="question">Q1 - Are you sure this is a question?</span>
         </p>
         <p>
-          <span class="date">A:</span>
-          <input type="text" class="q-firebase-sync" id="f1-q1" data-q="Are you sure this is a question?" placeholder="Yes/No">
+          <input type="text" class="q-firebase-sync answer" id="f1-q1" data-q="Q1 - Are you sure this is a question?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q2 - Are you a robot?</span>
         </p>
         <p>
-          <span class="date">Q:</span>
-          <a>Are you a robot?</a>
+          <input type="text" class="q-firebase-sync answer" id="f1-q2" data-q="Q2 - Are you a robot?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q3 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
         </p>
         <p>
-          <span class="date">A:</span>
-          <input type="text" class="q-firebase-sync" id="f1-q2" data-q="Are you a robot?" placeholder="Yes/No">
+          <input type="text" class="q-firebase-sync answer" id="f1-q3" data-q="Q3 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
         </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q4 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q4" data-q="Q4 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q5 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q5" data-q="Q5 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q6 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q6" data-q="Q6 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q7 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q7" data-q="Q7 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q8 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q8" data-q="Q8 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q9 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q9" data-q="Q9 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <span class="question">Q10 - Duis aute irure dolor in reprehenderit in voluptate velit?</span>
+        </p>
+        <p>
+          <input type="text" class="q-firebase-sync answer" id="f1-q10" data-q="Q10 - Duis aute irure dolor in reprehenderit in voluptate velit?" placeholder="Yes/No">
+        </p>
+      </div>
     </div>
+    <p class="wrapper-btn"><button type="button" class="btn btn-default btn-lg btn-send">Send</button></p>
   </div>
 
-<!-- <div class="posts">
-    <div>
-      <span class="date">August 20th, 2016</span>
-      <a href="/resource/first-resource">My First Resource</a>
-    </div>
-</si> -->
-
-  <!-- <footer>
-    <p><a href="example.com">Paul Feather</a> &copy; 2016</p>
-  </footer> -->
-
-   <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
   <script type="text/javascript" src="/portfolio/js/index.js"></script>
